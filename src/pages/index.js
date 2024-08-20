@@ -2,14 +2,22 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+import {Link} from "gatsby"
 
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
+    <div>
       <h1>
         <b>Dani</b>
+        <ul>
+          <li>
+            <a href="/home">click</a>
+          </li>
+          <li>
+            <Link to="/home">click gatsby</Link>
+          </li>
+        </ul>
       </h1>
     </div>
  
